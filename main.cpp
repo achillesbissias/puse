@@ -4,16 +4,21 @@ using namespace std;
 int main() {
 
     // Declaring Variables
+    // system("clear");
     int height;
     int length;
 
+
     // Fetching User Input
-    cout << "Enter the size: " << endl;
+    cout << "Input size of diamond: " << endl;
     cin >> height;
 
-    // Constructing diamond
+
+    // Constructing Diamond
     for (int i; i <= height; i++) {
-        cout << " p " << endl;
+        for (int a; a <= length; a++) {
+            cout << "hi";
+    }
     }
 
     return 0;
