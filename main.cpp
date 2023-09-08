@@ -3,12 +3,18 @@ using namespace std;
 
 int main() {
 
-    string name;
+    // Declaring Variables
+    int height;
+    int length;
 
-    cout << "What is your name?" << endl;
-    cin >> name;
+    // Fetching User Input
+    cout << "Enter the size: " << endl;
+    cin >> height;
 
-    cout << "Hello, " << name << "!" << endl;
+    // Constructing diamond
+    for (int i; i <= height; i++) {
+        cout << " p " << endl;
+    }
 
     return 0;
 }
