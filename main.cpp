@@ -3,22 +3,52 @@ using namespace std;
 
 int main() {
 
-    // Declaring Variables
-    // system("clear");
-    int height;
-    int length;
-
-
-    // Fetching User Input
+    // User Input
     cout << "Input size of diamond: " << endl;
+    int height;
     cin >> height;
 
+    // Declaring variables
+    int spacecount = height; // keeps count of # of spaces
+    int count = 0; // keeps count for # of loop iterations
 
-    // Constructing Diamond
-    for (int i; i <= height; i++) {
-        for (int a; a <= length; a++) {
-            cout << "hi";
+
+    while (count < height) // Outputs first half of diamond
+    {
+        count += 1;
+        spacecount -=1;
+
+        cout << endl;
+
+        for (int i = 0; i < spacecount; ++i) 
+        {
+            cout << " ";
+        }
+
+        for (int i = 0; i < count; ++i) 
+        {
+            cout << " *";
+        }
+
     }
+
+    while (count > 0) // Outputs second half of diamond
+    {
+        count -= 1;
+        spacecount += 1;
+
+        cout << endl;
+
+        for (int i = 0; i < spacecount; ++i)
+        {
+            cout << " ";
+        }
+
+
+        for (int i = 0; i < count; ++i) 
+        {
+            cout << " *";
+        }
     }
 
     return 0;
